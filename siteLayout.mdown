@@ -1,0 +1,48 @@
+# Site dev layout
+This is a general layout of how the site's components should be developed and organized.
+
+## Home Page
+- New
+	- open new workpage with default settings 
+		- default settings saved to a file in same format as files the user can save and load
+- Load
+	- load user created save file
+		- parse file and check for integrity/security before loading
+
+## Work Page
+
+- Global Variables
+	- Double timeMarkerPosition = 0;
+	- int BPM = 120;
+	- String rootNote;
+	- Bool isLooping;
+	- int numOfBeats;
+	- int currentBeat;
+
+- Chord progression container (arraylist containing chord objects)
+	- Chord
+		- String chordName;
+		- int rhythm
+		- int inversion (Should probably be added later on, add unnecessary initial complexity)
+			[0 = original chord, 1 = 1st inversion "move root up 1 octave", 2 = second inversion "move second note up one octave", 3 = third inversion = "move third note up one octave"]
+		- int octave; // Add later to avoid initial complexity
+		- Stack notes = [Major, Dominant, Minor, Minor 7th, Diminished 7th, Diminished, Major 7th, Augmented]
+			- Notes in a chord are calculated using the global root 
+
+- Player Object
+	- int isPlaying = false;
+	- int currentTime;
+	- int currentBeat;
+	- int[] notes; // Note to play is calculated using the integer value, note = rootNote + note Value. For example to play C5, set rootNote to 5 and set note to 0.
+		- for each note, play the note at position rootNote + note. Must play simultaneously to be a chord.
+
+## Save form
+
+- Work files are simply json files containing
+	- String RootNote
+	- int numOfChords
+	- chord[] {
+		String chordName;
+		int rhythm; "0 = hold chord for duration. Can add more rhythms later"
+		int inversion
+	}
