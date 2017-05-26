@@ -3,13 +3,10 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    <David Ruan> -- <Front end developer>
 
 # TECHNOLOGY COLOPHON
-
+	
+	md5Piano free VST
     HTML5, CSS3
     jQuery, Modernizr
