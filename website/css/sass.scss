@@ -1,0 +1,38 @@
+
+
+
+// Colors
+
+$color-primary-0 : #373A3B;
+$color-primary-1 : #434C51;
+$color-primary-2 : #2E3133;
+$color-primary-3 : #25282A;
+$color-primary-4 : #1A1D1E;
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	backbround-color: $color-primary-0;
+}
+
+#headerbox {
+	background-color: $color-primary-1;
+	h1, p {
+		color: white;
+		 text-shadow: 0px 2px #000000;
+	}
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+}
+
+.navbar {
+	margin-bottom: 0px
+}

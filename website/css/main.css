@@ -1,22 +1,20 @@
+h1 {
+  font-family: 'Oswald', sans-serif; }
 
+p {
+  font-family: 'Open Sans', sans-serif; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+body {
+  backbround-color: #373A3B; }
 
+#headerbox {
+  background-color: #434C51; }
+  #headerbox h1, #headerbox p {
+    color: white;
+    text-shadow: 0px 2px #000000; }
 
+.jumbotron {
+  margin-bottom: 0px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar {
+  margin-bottom: 0px; }
