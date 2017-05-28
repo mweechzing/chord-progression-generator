@@ -1,7 +1,7 @@
 h1 {
   font-family: 'Oswald', sans-serif; }
 
-p {
+p, h2 {
   font-family: 'Open Sans', sans-serif; }
 
 body {
@@ -9,12 +9,23 @@ body {
 
 #headerbox {
   background-color: #434C51; }
+  #headerbox .jumbotron {
+    background-color: #434C51;
+    padding: 10px; }
   #headerbox h1, #headerbox p {
     color: white;
     text-shadow: 0px 2px #000000; }
+  #headerbox p {
+    text-decoration: underline; }
 
-.jumbotron {
-  margin-bottom: 0px; }
-
-.navbar {
-  margin-bottom: 0px; }
+#chordWorkspace {
+  margin-top: 1%;
+  border-style: solid;
+  border-width: 2px; }
+  #chordWorkspace .chordContainer {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    padding-top: 5%;
+    padding-bottom: 5%; }

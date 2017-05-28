@@ -9,11 +9,13 @@ $color-primary-2 : #2E3133;
 $color-primary-3 : #25282A;
 $color-primary-4 : #1A1D1E;
 
+// Properties
+
 h1 {
 	font-family: 'Oswald', sans-serif;
 }
 
-p {
+p, h2 {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -23,16 +25,35 @@ body {
 
 #headerbox {
 	background-color: $color-primary-1;
+
+	.jumbotron {
+		background-color: $color-primary-1;
+		padding: 10px;
+	}
+
 	h1, p {
 		color: white;
 		 text-shadow: 0px 2px #000000;
 	}
+
+	p {
+		text-decoration: underline;
+	}
 }
 
-.jumbotron {
-	margin-bottom: 0px;
-}
+#chordWorkspace {
+	margin-top: 1%;
+	border-style: solid;
+    border-width: 2px;
+	
 
-.navbar {
-	margin-bottom: 0px
+	.chordContainer {
+		display: inline-block;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 2px;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
 }
