@@ -5,7 +5,10 @@ p, h2 {
   font-family: 'Open Sans', sans-serif; }
 
 body {
-  backbround-color: #373A3B; }
+  background-color: #373A3B; }
+
+#workspace {
+  background-color: #434C51; }
 
 #headerbox {
   background-color: #434C51; }
@@ -19,13 +22,15 @@ body {
     text-decoration: underline; }
 
 #chordWorkspace {
-  margin-top: 1%;
   border-style: solid;
-  border-width: 2px; }
+  border-width: 2px;
+  margin-top: 1%;
+  margin-bottom: 1%; }
   #chordWorkspace .chordContainer {
     display: inline-block;
     border-style: solid;
     border-width: 1px;
     border-radius: 2px;
     padding-top: 5%;
-    padding-bottom: 5%; }
+    padding-bottom: 5%;
+    background-color: white; }

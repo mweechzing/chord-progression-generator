@@ -3,8 +3,8 @@
 
 // Colors
 
-$color-primary-0 : #373A3B;
-$color-primary-1 : #434C51;
+$color-primary-0 : #434C51;
+$color-primary-1 : #373A3B;
 $color-primary-2 : #2E3133;
 $color-primary-3 : #25282A;
 $color-primary-4 : #1A1D1E;
@@ -20,14 +20,19 @@ p, h2 {
 }
 
 body {
-	backbround-color: $color-primary-0;
+	background-color: $color-primary-1;
+}
+
+#workspace {
+	background-color: $color-primary-0;
 }
 
 #headerbox {
-	background-color: $color-primary-1;
+
+	background-color: $color-primary-0;
 
 	.jumbotron {
-		background-color: $color-primary-1;
+		background-color: $color-primary-0;
 		padding: 10px;
 	}
 
@@ -42,10 +47,10 @@ body {
 }
 
 #chordWorkspace {
-	margin-top: 1%;
 	border-style: solid;
     border-width: 2px;
-	
+	margin-top: 1%;
+	margin-bottom: 1%;
 
 	.chordContainer {
 		display: inline-block;
@@ -54,6 +59,7 @@ body {
 		border-radius: 2px;
 		padding-top: 5%;
 		padding-bottom: 5%;
+		background-color: white;
 	}
 
 }
