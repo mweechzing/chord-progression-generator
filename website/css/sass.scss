@@ -31,15 +31,16 @@ body {
 	.jumbotron {
 		background-color: $color-primary-0;
 		padding: 10px;
+		padding-bottom: 0
+	}
+	
+	h1 {
+		text-decoration: underline;
 	}
 
 	h1, p {
 		color: white;
 		 text-shadow: 0px 2px #000000;
-	}
-
-	p {
-		text-decoration: underline;
 	}
 }
 
@@ -59,4 +60,26 @@ body {
 		background-color: white;
 	}
 
+	button {
+		@media only screen and (max-width: 320px) {
+			/* For tiny screens: */
+			font-size: 10px;
+		}
+	}
+
+	#scale-selector {
+		margin: 2%;
+		color: white;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+    /* For tiny screens: */
+    h1 {font-size: 20px}
+    h2 {font-size: 12px}
+    h3 {font-size: 8px}
+}
+
+footer {
+	color: white;
 }

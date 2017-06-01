@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"> 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -21,48 +21,60 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
     <!--Header-->
     <div class ="container" id="headerbox">
       <div class ="jumbotron text-center">
         <h1>Chord Progression Builder</h1>
-        <p>Test and build chord progressions with ease!</p>
+        <p class="hidden-xs">Build and test chord progressions with ease!</p>
       </div>
     </div>
     <br>
+
     <!--Workspace-->
     <div class="container" id="workspace">
       <div class="container-fluid " id="chordWorkspace">
 
         <div class="row">
 
-          <div class="col-md-3 col-sm-6 col-xs-12 chordContainer text-center">
+          <div class="col-md-3 col-sm-3 col-xs-6 chordContainer text-center">
             <h2>Chord Notation</h2>
             <h3>Chord Name</h3>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12 chordContainer text-center">
+          <div class="col-md-3 col-sm-3 col-xs-6 chordContainer text-center">
             <h2>Chord Notation</h2>
             <h3>Chord Name</h3>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12 chordContainer text-center">
+          <div class="col-md-3 col-sm-3 col-xs-6 chordContainer text-center">
             <h2>Chord Notation</h2>
             <h3>Chord Name</h3>
           </div>
           
 
-          <div class="col-md-3 col-sm-6 col-xs-12 chordContainer text-center">
+          <div class="col-md-3 col-sm-3 col-xs-6 chordContainer text-center">
             <h2>Chord Notation</h2>
             <h3>Chord Name</h3>
           </div>
-
+        </div> 
+        <!--end row-->
+        
+        <div class="text-center" id="scale-selector" >
+        
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <p>Current Scale: C Major</p>
+          </button>
+        
+        <p>Click here ^ to change the current scale </p>
         </div>
+
       </div>
     </div>
 
     <!--Footer-->
     <br>
-    <div class="container" >
+    <div class="container">
       <footer>
         <p>&copy; David Ruan 2017</p>
       </footer>

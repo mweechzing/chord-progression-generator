@@ -14,12 +14,13 @@ body {
   background-color: #434C51; }
   #headerbox .jumbotron {
     background-color: #434C51;
-    padding: 10px; }
+    padding: 10px;
+    padding-bottom: 0; }
+  #headerbox h1 {
+    text-decoration: underline; }
   #headerbox h1, #headerbox p {
     color: white;
     text-shadow: 0px 2px #000000; }
-  #headerbox p {
-    text-decoration: underline; }
 
 #chordWorkspace {
   border-style: solid;
@@ -34,3 +35,23 @@ body {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: white; }
+  @media only screen and (max-width: 320px) {
+    #chordWorkspace button {
+      /* For tiny screens: */
+      font-size: 10px; } }
+  #chordWorkspace #scale-selector {
+    margin: 2%;
+    color: white; }
+
+@media only screen and (max-width: 320px) {
+  /* For tiny screens: */
+  h1 {
+    font-size: 20px; }
+
+  h2 {
+    font-size: 12px; }
+
+  h3 {
+    font-size: 8px; } }
+footer {
+  color: white; }
