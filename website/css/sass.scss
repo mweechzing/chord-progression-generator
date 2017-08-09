@@ -1,0 +1,85 @@
+// Colors
+
+$color-primary-0 : #434C51;
+$color-primary-1 : #373A3B;
+$color-primary-2 : #2E3133;
+$color-primary-3 : #25282A;
+$color-primary-4 : #1A1D1E;
+
+// Properties
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+p, h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: $color-primary-1;
+}
+
+#workspace {
+	background-color: $color-primary-0;
+}
+
+#headerbox {
+
+	background-color: $color-primary-0;
+
+	.jumbotron {
+		background-color: $color-primary-0;
+		padding: 10px;
+		padding-bottom: 0
+	}
+	
+	h1 {
+		text-decoration: underline;
+	}
+
+	h1, p {
+		color: white;
+		 text-shadow: 0px 2px #000000;
+	}
+}
+
+#chordWorkspace {
+	border-style: solid;
+    border-width: 2px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+	.chordContainer {
+		display: inline-block;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 2px;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-color: white;
+	}
+
+	button {
+		@media only screen and (max-width: 320px) {
+			/* For tiny screens: */
+			font-size: 10px;
+		}
+	}
+
+	#scale-selector {
+		margin: 2%;
+		color: white;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+    /* For tiny screens: */
+    h1 {font-size: 20px}
+    h2 {font-size: 12px}
+    h3 {font-size: 8px}
+}
+
+footer {
+	color: white;
+}
